@@ -367,13 +367,13 @@ h1:after {
 
 #icon-style3 {
     color: white;
-    font-size: 48px;
+    font-size: 5vw;
     margin-top: 5px;
 }
 
 .circle {
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     background: #54A7EC;
     border-radius: 50%;
     margin: 1.5rem;
@@ -450,6 +450,12 @@ h1:after {
     margin: 0;
 }
 
+#icon-style-fe12 {
+    color: #7BE112;
+    font-size: 3vw;
+    margin: 0;
+}
+
 .feature-font {
     font-weight: bold;
 }
@@ -510,6 +516,43 @@ h1:after {
 
 }
 
+/*sidebar for mobile icon*/
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border: solid 2px #54A7EC;
+    overflow-x: hidden;
+    padding-top: 60px;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 @media only screen and (min-width: 777px) and (max-width: 992px) {
     nav {
         display: none;
@@ -543,12 +586,17 @@ h1:after {
         margin-left: 0px;
     }
 
+    .bottom-bar > ul li {
+        margin-left: 0px;
+    }
+
+
     .bottom-bar > ul > li img {
-        width: 60%;
+        width: 40%;
     }
 
     .ser-box {
-        height: 50%
+        height: 80%
     }
 
     .fea-content {
@@ -594,13 +642,23 @@ h1:after {
         margin-left: 0px;
     }
 
+    ..bottom-bar > ul > li {
+        margin: 0px;
+    }
+
     .bottom-bar > ul > li img {
-        width: 60%;
+        width: 40%;
     }
 
     .fea-content {
         width: 150px;
         height: 25px;
+    }
+
+    .circle {
+        width: 45px;
+        height: 45px;
+
     }
 }
 
@@ -640,12 +698,21 @@ h1:after {
         margin-left: 0px;
     }
 
+    .bottom-bar > ul > li {
+        margin: 0px 0px 0px 0px;
+    }
+
     .bottom-bar > ul > li img {
-        width: 60%;
+        width: 20%;
     }
 
     .fea-content {
         width: 150px;
+        height: 25px;
+    }
+
+    .circle {
+        width: 25px;
         height: 25px;
     }
 }
