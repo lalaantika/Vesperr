@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Vesperr</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.JPG" alt="logo"></a>
+        </div>
+        <div class="mobile-bar">
+            <a onclick="openNav()"><i class="material-icons ">&#9776;</i></a>
+            <div id="mySidenav" class="sidenav">
+                <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Team</a>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Features">Portfolio</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Pricing</a></li>
+                <li class="drop-down"><a href="">Drop Down</a>
+                    <ul>
+                        <li><a href="">Drop Down 1</a></li>
+                        <li><a href="">Drop Down 2</a></li>
+                        <li><a href="">Drop Down 3</a></li>
+                        <li><a href="">Drop Down 4</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="openForm()" href="#contact">Contact</a></li>
+
+                <div class="form-popup " id="myForm">
+                    <form class="form-container">
+                        <h2>Contact Us</h2><br>
+                        <label class="ser-detail">Send your message in the form below and we will get back to you as early as possible.</label><br>
+                        <label class="contact-font" for="name">Name</label><br>
+                        <input type="text" placeholder="Enter name" name="name" required><br>
+                        <label class="contact-font" for="email">Email</label><br>
+                        <input type="text" placeholder="Enter email" name="email" required><br>
+                        <label class="contact-font" for="message">Message</label><br>
+                        <input type="text" placeholder="type your message here" name="message" required><br>
+                        <button type="submit" class=" cnt-btn btn-main">Send Message</button>
+                        <button type="button" class="btn-main" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+                <li class="get-started"><a onclick="myFunction()">Get Started</a></li>
+            </ul>
+        </nav>
+        <div class="home-content">
+            <h2>Grow your business with Vesperr</h2>
+            <h3>We are team of talanted designers making websites with Bootstrap</h3>
+            <a href="#about" class="btn-main">Get Started</a>
+        </div>
+        <div class="main-img"><img src="images/mainimage.png" alt="MainPage">
+        </div><a href="">
+            <i class="material-icons back-to-top ">&#xe5d8;</i></a>
+        <div class="bottom-bar">
+            <ul>
+                <li><img src="images/bottombar-1.png" alt="MainPage"></li>
+                <li><img src="images/bottombar-2.png" alt="MainPage"></li>
+                <li><img src="images/bottombar-3.png" alt="MainPage"></li>
+                <li><img src="images/bottombar-4.png" alt="MainPage"></li>
+                <li><img src="images/bottombar-5.png" alt="MainPage"></li>
+                <li><img src="images/bottombar-6.png" alt="MainPage"></li>
+            </ul>
+        </div>
+    </div> <!-- end of 1stpage-->
+
+    <div class="container" id="about">
+        <div class="ab-heading">
+            <h1 class="main-heading">ABOUT US</h1>
+        </div>
+        <div class="about-content">
+            <p class="normal-font">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+            </p>
+            <ul class="normal-font">
+                <li><i class="material-icons" id="icon-style4">done_all</i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li><i class="material-icons" id="icon-style4">done_all</i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                <li><i class="material-icons" id="icon-style4">done_all</i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+        </div>
+        <div class="about-content2">
+            <p class="normal-font">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn-main">Learn More</a>
+        </div>
+    </div>
+    <!-- end of about-->
+
+    <div class="container normal-font" id="Team">
+        <div class=" about2-align about-box1">
+            <p class="icon-number">
+                <i class="material-icons" id="icon-style">sentiment_very_satisfied</i> 65
+            </p>
+            <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+        </div>
+        <div class=" about2-align about-box2">
+            <p class="icon-number">
+                <i class="material-icons" id="icon-style">folder_open</i> 85
+            </p>
+            <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+        </div>
+        <div class=" about2-align about-box3">
+            <p class="icon-number">
+                <i class="material-icons" id="icon-style">schedule</i> 12
+            </p>
+            <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+        </div>
+        <div class=" about2-align about-box4">
+            <p class="icon-number">
+                <i class="material-icons" id="icon-style">emoji_events</i> 15
+            </p>
+            <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+        </div>
+    </div>
+
+
+    <!-- end of about page 2nd part-->
+    <div class="container" id="Services">
+        <div class="ser-heading">
+            <h1 class="main-heading">SERVICES</h1>
+        </div>
+        <div class="ser-subhead">
+            <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+        </div>
+        <div class="ser-wrapper">
+            <div class="ser-box">
+                <div class="circle">
+                    <i class="material-icons" id="icon-style3">sports_basketball</i>
+                </div>
+                <h4 class="ser-title">Lorem Ipsum</h4>
+                <p class="normal-font">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+            <div class="ser-box">
+                <div class="circle">
+                    <i class="material-icons" id="icon-style3">description</i>
+                </div>
+                <h4 class="ser-title">Sed ut perspiciatis</h4>
+                <p class="normal-font">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+            <div class="ser-box">
+                <div class="circle">
+                    <i class="material-icons" id="icon-style3">speed</i>
+                </div>
+                <h4 class="ser-title">Magni Dolores</h4>
+                <p class="normal-font">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+            <div class="ser-box">
+                <div class="circle">
+                    <i class="material-icons" id="icon-style3">public</i>
+                </div>
+                <h4 class="ser-title"> Nemo Enim</h4>
+                <p class="normal-font">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+        </div>
+    </div>
+    <!--end of service box-->
+    <div class="container normal-font" id="Team">
+        <div class="ser-heading">
+            <h1 class="main-heading">FEATURES</h1>
+        </div>
+        <div class="ser-subhead">
+            <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+        </div>
+        <div class="fea-box1 feature-font">
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f1">storefront</i>Lorem Ipsum
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f2">insert_chart_outlined</i>Dolor Sitema
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f3">date_range</i>Sed perspiciatis
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f4">format_paint</i>Magni Dolores
+            </div>
+
+        </div>
+        <div class="fea-box2 feature-font">
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f1">storefront</i>Nemo Enim
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f2">storefront</i>Eiusmod Tempor
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f3">storefront</i>Midela Teren
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f4">storefront</i>Pira Neve
+            </div>
+
+        </div>
+        <div class=" fea-box3 feature-font">
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f1">storefront</i>Nemo Enim
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f2">track_changes</i>Eiusmod Tempor
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-f3">storefront</i>Midela Teren
+            </div>
+            <div class="fea-content">
+                <i class="material-icons" id="icon-style-fe12">fingerprint</i>Pira Neve
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>﻿
